@@ -1,0 +1,56 @@
+This chapter is not part of the thesis. It provides some advice and examples for LaTeX beginners.
+
+Some of the most important commands:
+
+Use \cite{} for citations.
+Use \citep{} for parenthetical citations.
+Use \begin{figure} and \end{figure} for figures.
+Use \begin{table} and \end{table} for tables. I recommend creating tables by pasting into an online tool, for example: https://www.tablesgenerator.com/
+Use \begin{equation} and \end{equation} for equations.
+Use \label{} to label your sections/figures/equations/tables.
+Use \ref{} to find the number of the labeled objects.
+In-text equations are written using $equation here$.
+
+Overleaf has many good online guides and lists of commands. You could start here:  https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
+
+
+Example table from my thesis (view this table by inserting into a compiled chapter):
+
+\begin{table}[h]\centering
+    \caption{Input features with units}\label{tab:Input features}
+        \begin{tabular}{lccc}
+             \hline				
+ 			Parameter & Symbol & Units \\ 
+ 						\hline 
+             Air temperature & $T_{a}$ & \degree C \\
+ 			 Relative humidity & $RH$ & -- \\
+ 			 Vapor pressure deficit & $VPD$ & kPa \\
+ 			 Precipitation & $P$ & inches \\
+ 			 Shallow soil water content & $SWC$ & -- \\
+ 			 Photosynthetic photon flux density & $PPFD$ & \mu mol/s-m^2 \\
+ 			 Average monthly wind speed & $u_{avg}$ & m/s \\ 
+ 			 Monthly average precipitation & $MAP$ & mm \\
+ 			 Monthly average temperature & $MAT$ & \degree C \\
+ 						 \hline 
+         \end{tabular}
+ \end{table}
+
+
+Example figure from my thesis (this figure will not compile unless you upload a corresponding file, in this case named artificial_neuron.png):
+\begin{figure}
+\begin{center}
+\includegraphics[width=16cm]{artificial_neuron.png}
+\end{center}
+\caption{An artificial neuron applies an activation function to a weighted sum of inputs.} \label{fig:neuron}
+\end{figure}
+
+
+Example equation from my thesis (view by inserting into a compiled chapter):
+
+\begin{equation}
+    MSE = \frac{1}{N} \sum\limits_{i=1}^{N}{(\hat{y}_i-y_i)}^2, \label{equation:mse}
+\end{equation}
+
+
+Good luck!
+-Morgan

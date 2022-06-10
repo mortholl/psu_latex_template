@@ -1,0 +1,58 @@
+% This template reflects the latest standards on https://www.pdx.edu/gradschool/etd-formatting-requirements as of 6/7/2022.
+% Please check the template against the above website in case the standards have changed.
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{natbib}
+\setcitestyle{authoryear, open={((},close={)}}
+\usepackage{threeparttable}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\doublespacing
+\geometry{a4paper, margin=1in}
+\titleformat{\chapter}{\normalfont\Tiny\bfseries}{\thechapter.}{5pt}{}
+\titleformat{\section}{\normalfont\Tiny}{\thesection}{5pt}{}
+\titleformat{\subsection}{\normalfont\Tiny}{\thesubsection}{5pt}{}
+\titleformat{\subsubsection}{\normalfont\Tiny}{\thesubsubsection}{5pt}{}
+
+
+% The below chapters are required for PSU formatting.
+\begin{document}
+\pagenumbering{gobble}
+\input{00-titlepages.tex}
+\clearpage
+
+\input{00-acknowledgements}
+
+\pagenumbering{roman}
+\input{00-abstract}
+
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+
+\pagenumbering{arabic}
+
+% The below chapters can be edited according to the needs of your thesis.
+% The only official requirement is that the thesis should be divided into sections.
+% If you delete a section in the contents, you must delete it below or else your document will not compile.
+
+\input{01-introduction}
+\input{02-researchmethods}
+\input{03-results}
+\input{04-discussion}
+\input{05-conclusions}
+
+\input{bib}
+
+\input{06-appendix-a}
+
+\end{document}
